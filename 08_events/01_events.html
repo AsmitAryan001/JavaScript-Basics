@@ -46,3 +46,26 @@
     // The deafault mode of propagation is event bubbling , but it can changed as per use 
 
     // We can also stop the propagation by using the stopPropagation() function  , it would prevent the event from bubbling upwards and vice versa.
+
+
+      // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault(); // it will prevent from redirecting towards the link 
+    //     e.stopPropagation() // it will prevent from event bubbbling 
+    //     console.log("google clicked");
+    // }, false)
+
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName); // tagName would allow only the images to be removed instead of completley removing the ul.
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+    
+        
+    })
+    
+    //removeIt.parentNode.removeChild(removeIt)
+</script>
+</html>
