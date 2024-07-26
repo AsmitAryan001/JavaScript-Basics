@@ -16,7 +16,7 @@ const startChangingColor = function(){
  }
 }
 
-//to change the color
+//to target and change the color
 function changeBgColor(){
     document.body.style.backgroundColor = randomColor()
 }
