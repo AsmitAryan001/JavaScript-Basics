@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Events</h1>
+    <button id="stop">Stop</button>
+
+
+</body>
+<script>
+    //setTimeouot allows us to perform a certain execution after a desired time.
+
+    const printName = function(){
+        console.log("asm");
+    }
+    const changeText = function (){
+        document.querySelector('h1').innerHTML = "JavaScript"
+    }
+    const changeMe = setTimeout(changeText, 2000) 
+
+    //here we are selecting the button through its id and using clearTimeout function to stop what was going to happen by setTimeout. 
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("stopped");
+    })
+</script>
+</html>
