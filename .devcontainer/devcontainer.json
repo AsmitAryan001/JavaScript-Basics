@@ -21,7 +21,8 @@
 				"esbenp.prettier-vscode",
 				"vscode-icons-team.vscode-icons",
 				"wayou.vscode-todo-highlight",
-				"ms-vscode.live-server"
+				"ms-vscode.live-server",
+				"ms-vscode.live-preview"
 			],
 			"settings": {
 				"editor.fontSize": 32,
