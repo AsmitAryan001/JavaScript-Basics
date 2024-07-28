@@ -31,7 +31,7 @@ function User(username, loginCount, isLoggedIn){
     return this
 }
 
-const userOne = new User("asmit", 12, true) // new is a constructor function which is used to create a new instance for userOne ,if new is not here then userTwo will overwrite its data to userOne as no new instance is being created ,and even if we print userOne the Data of userTTwo will be displayed
+const userOne = new User("asmit", 12, true) // the new keyword creates an new object(that has a constructor function) , which is used to create a new instance for userOne ,if new is not here then userTwo will overwrite its data to userOne as no new instance is being created ,and even if we print userOne the Data of userTTwo will be displayed
 const userTwo = new User("yash", 11, false)
 console.log(userOne.constructor);
 //console.log(userTwo);
