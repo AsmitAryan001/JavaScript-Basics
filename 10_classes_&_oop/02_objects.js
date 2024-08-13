@@ -14,7 +14,7 @@ function createUser(username, score){
     this.score = score
 }
 
-createUser.prototype.increment = function(){
+createUser.prototype.increment = function(){ //here we are injecting an our own functionality into the function  
     this.score++
 }
 createUser.prototype.printMe = function(){
